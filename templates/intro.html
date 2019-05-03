@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Deployment of ML App</title>
+    </head>
+    <body>
+        <h1>My ML App</h1>
+        <div>
+            <form action="{{ url_for('result')}}" method="POST" enctype="multipart/form-data">
+                <h3>Upload your Image</h3>
+                <input type="file" name = 'input' accept="images/*" multiple >
+                <br>
+                <input type="submit" class="btn" value="result">
+            </form>
+        </div>
+    </body>
+</html>
